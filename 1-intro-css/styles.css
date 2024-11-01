@@ -1,0 +1,36 @@
+/* selector{
+  /* property name: value;*/
+/* } */
+
+input {
+  /* top, right, bottom and left */
+  padding: 10px 15px;
+  border: 1.5px solid rebeccapurple;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+form div label {
+  margin-right: 1rem;
+}
+button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* styles for table */
+table {
+  /* border-collapse: seperate */
+  border-collapse: collapse;
+}
+tr,
+th,
+td {
+  border: 1px solid grey;
+  padding: 1rem;
+  text-align: left;
+}
