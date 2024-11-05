@@ -1,0 +1,125 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* COLORS */
+/*  
+#ffffff
+#0f4a7b
+#f57d7d
+#62becb
+*/
+/* GLOBAL STYLES */
+li{
+    list-style: none;
+}
+body{
+    background-color:#ffffff ;
+    font-family: "Geologica", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.container{
+    max-width: 1280;
+    margin: 0 auto;
+    padding: 0.3rem 3rem;
+}
+/* PORTAL STYLES START */
+.portal-container{
+    display: flex;
+    align-items: center;
+}
+.left-portal-container{
+    flex: 4;
+    background-color: #0f4a7b;
+    height: 100vh;
+    color: #ffffff ;
+}
+.portal-desc{
+    font-size: 50px;
+    width: 454px;
+height: 183px;
+margin-top: 80px;
+left: 82px;
+}
+.middle-portal-container{
+    flex: 0.2;
+    background-color: #f57d7d;
+    height: 100vh;
+    /* transform: rotate(100deg); */
+    /* shape-margin: 5px; */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.right-portal-container{
+    flex: 4;
+    background-color: #f9fbfd;
+    color: #0f4a7b;
+}
+.logo{
+    width: 127px;
+height: 47.98px;
+padding: 0px;
+gap: 0px;
+/* margin-left: 4/px; */
+opacity: 0px;
+}
+/* login styles */
+.title{
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;    
+    gap: .8rem;
+    width: 100%;
+}
+.input-container{
+    margin-bottom: .8rem;
+    position: relative;
+}
+.input-container input{
+    width: 489px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    height: 69px;
+    top: 116px;
+    gap: 0px;
+    border: none;
+    border-radius: 10px 0px 0px 0px;
+    border: 0.5px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #0F4A7B;
+    background-color: #FFFFFF;
+
+}
+.input-container label{
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.portal-btn{
+  color: white;
+  background-color: #0F4A7B;
+  padding: .9rem 1.5rem;
+  width: 20%;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+/* PORTAL STYLES END */
+/* media queries */
+@media (max-width: 768px) {
+    .portal-container{
+        flex-direction: column;
+    }
+}
