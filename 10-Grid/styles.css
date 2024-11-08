@@ -1,0 +1,211 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Parent Elements */
+/* Grid Styles Start */
+.grid-container {
+  display: grid;
+  gap: 1rem;
+}
+.grid-container > div {
+  background-color: dodgerblue;
+  color: white;
+  padding: 20px;
+}
+/* Grid Styles end */
+/* Grid Template Columns Styles start */
+.g-t-c {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto auto auto auto;
+}
+.g-t-c > div {
+  background-color: rgb(25, 68, 111);
+  color: white;
+  padding: 20px;
+}
+/* Grid Template Columnx Styles End */
+/* Grid Template Row Styles start */
+.g-t-r {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+}
+.g-t-r > div {
+  background-color: palevioletred;
+  color: white;
+  padding: 20px;
+}
+/* Grid Template Rows Styles end */
+/* Justify Content Styles Start  */
+.j-c {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  gap: 1rem;
+  /* justify-content: start; */
+  /* justify-content: end; */
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  justify-content: space-between;
+  padding: 40px;
+  background-color: cornflowerblue;
+}
+.j-c > div {
+  background-color: rgb(4, 130, 147);
+  color: white;
+  padding: 20px;
+}
+/* Justify Content Styles End */
+/* Align Content  styles Start*/
+.a-c {
+  background-color: plum;
+  padding: 40px;
+  display: grid;
+  /* align-content: start; */
+  /* align-content: end; */
+  /* align-content: space-around; */
+  /* align-content: space-between; */
+  /* align-content: space-evenly; */
+  align-content: center;
+  gap: 1rem;
+  grid-template-columns: 80px 80px 80px 80px;
+  height: 400px;
+}
+.a-c > div {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+}
+/* Align Content styles end */
+/* At Center*/
+.at-center{
+    padding: 40px;
+ margin: 30px;
+ background-color: royalblue;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.at-center>div{
+  background-color: cadetblue;
+  padding: 30px;
+}
+.at-center-grid{
+    padding: 40px;
+    margin: 30px;
+    background-color: royalblue;
+    display: grid;
+    place-items: center;
+}
+.at-center-grid>div{
+    background-color: cadetblue;
+    padding: 30px;
+}
+/* At Center */
+/* Parent Elemnts */
+
+/* Children Elements */
+/* Grid Column */
+.g-c{
+ display: grid;
+ padding: 40px;
+ gap: 1rem;
+ background-color: rgb(25, 68, 111);
+ margin: 15px;
+ grid-template-columns: auto auto auto;
+}
+.g-c>div{
+ /* background-color: rgb; */
+ color: white;
+ background-color: palevioletred;
+ padding: 20px ;
+}
+.fourth-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.sixth-child{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+/* Grid Column */ 
+/* Grid Row */
+.g-r{
+ margin: 15px;
+ padding: 40px;
+ display: grid;
+ gap: 1rem;
+ grid-template-columns: auto auto auto auto;
+ background-color: rgb(25, 68, 111);
+}
+.g-r>div{
+ background-color: palevioletred;
+ color: white;
+ padding: 20px;
+}
+.first-item{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.fourth-item{
+    grid-row: 2/4;
+}
+.fifth-item{
+    grid-row: 1/2;
+}
+/* Grid Row */
+/* Grid Template Areas */
+/* Grid Template Areas */
+ .container{
+    padding: 30px;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "header header header header header header"
+    "menu main main main right right"
+    "footer footer footer footer footer footer";
+    background-color: dodgerblue;
+ }
+ .container>div{
+    color: white;
+    background-color: palevioletred;
+    padding: 1rem;
+
+ }
+ .item-1{
+ grid-area: header;
+ }
+ .item-2{
+ grid-area: menu;
+ }
+ .item-3{
+  grid-area: main;
+ }
+ .item-4{
+ grid-area: right;
+ }
+ .item-5{
+grid-area: footer;
+ }
+ .fr{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(7, auto);
+ }
+ .fr>div{
+ background-color: white;
+ background-color: palevioletred;
+ padding: 1rem;
+ }
+/* Fr and Repeat () */
+/* Fr and Repeat () */
+/* Children Elements */
+
+
+
