@@ -200,12 +200,27 @@ grid-area: footer;
  }
  .fr>div{
  background-color: white;
- background-color: palevioletred;
+ background-color: orange;
  padding: 1rem;
  }
 /* Fr and Repeat () */
 /* Fr and Repeat () */
 /* Children Elements */
-
-
+/* Two Column Container */
+.column-container{
+ display: grid;
+ grid-template-columns: repeat(2, auto);
+ gap: 1rem;
+}
+.left-container{
+ background-color: rgb(25, 68, 111);
+ padding: 20px;
+ color: #ffffff;
+}
+.right-container{
+ background-color: palevioletred;
+ padding: 20px;
+ color: #ffffff;
+}
+/* Two Column container */
 

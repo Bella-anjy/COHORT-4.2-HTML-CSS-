@@ -50,18 +50,15 @@ height: 183px;
 margin-top: 80px;
 left: 82px;
 }
-.middle-portal-container{
-    flex: 0.2;
-    background-color: #f57d7d;
-    height: 100vh;
-    /* transform: rotate(100deg); */
-    /* shape-margin: 5px; */
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
+
 .right-portal-container{
-    flex: 4;
+    flex: 2;
     background-color: #f9fbfd;
     color: #0f4a7b;
+    /* position: relative; */
+}
+.middle-portal-container{
+    height: 100%;
 }
 .logo{
     width: 127px;
