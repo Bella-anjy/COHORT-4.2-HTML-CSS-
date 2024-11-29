@@ -1,0 +1,484 @@
+/* CSS RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Global Styles */
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+body {
+  font-family: "EB Garamond", "Nunito Sans";
+  background-color: #ffffff;
+  color: #000000;
+}
+h2 {
+  font-family: "EB Garamond";
+}
+p,
+span {
+  font-family: "Nunito Sans";
+  line-height: 21px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 1.2rem 2rem;
+}
+/* Top bar styles start */
+.topbar-container {
+  background-color: #7549ff;
+
+  border-bottom: 2px solid #ffffff;
+}
+.top-content {
+  justify-content: space-between;
+  display: flex;
+}
+.topbar-left-content img {
+  width: 18px;
+  height: 18px;
+}
+.topbar-left-content {
+  gap: 1.2rem;
+  align-items: center;
+  display: flex;
+}
+.topbar-left-content span {
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.tel,
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.topbar-right-content {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.topbar-right-content span {
+  color: #ffffff;
+  font-size: 14px;
+}
+/* Top bar styles end  */
+/* Hero styles start */
+.hero-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+  overflow-y: hidden;
+  font-family: "Nunito Sans";
+  background: linear-gradient(rgba(85, 0, 212, 0.55), rgba(85, 0, 212, 0.3)),
+    url("images/home.png") no-repeat center center/cover;
+  height: calc(100vh - 3.8rem);
+}
+.hero-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-nav img {
+  width: 168px;
+}
+.hero-nav-lists {
+  display: flex;
+  gap: 1.5rem;
+}
+.hero-nav-list {
+  color: #ffffff;
+  font-size: 15px;
+}
+.hero-btn {
+  font-family: "Nunito Sans";
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #5500d480;
+  border: none;
+  padding: 10px 12px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-text h2 {
+  color: #ffffff;
+  font-family: "EB Garamond";
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 83px;
+}
+.hero-text p {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  width: 55%;
+  margin-top: 1.1rem;
+  text-align: center;
+}
+/* Hero styles end */
+/* Welcome styles start */
+.welcome-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.left-welcome-content {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.left-welcome-content h2 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 58px;
+  font-family: "EB Garamond";
+  color: #222222;
+}
+.left-welcome-content p {
+  font-weight: 400;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.right-welcome-content img {
+  width: 32%;
+  position: absolute;
+  bottom: -280px;
+  left: 720px;
+}
+/* Welcome styles end */
+/* investment styles start */
+.investment-container {
+  margin-top: 8rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background: linear-gradient(rgba(85, 0, 212, 0.55), rgba(85, 0, 212, 0.3)),
+    url("images/man 2.png") no-repeat center center/cover;
+}
+.top-investment-container {
+  margin-top: 5rem;
+  color: #ffffff;
+}
+.top-investment-container h2 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 58.72px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.4rem;
+}
+.card {
+  background-color: #5500d4;
+  padding: 16px;
+  text-align: center;
+}
+.card img {
+  width: 50px;
+  height: 50px;
+}
+.card h3 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  font-family: "Nunito Sans";
+}
+/* investment styles  end*/
+/* Card Layout styles start */
+.property-container {
+  cursor: pointer;
+  margin-top: 5rem;
+}
+.properties {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+}
+.property {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.head {
+  font-family: "EB Garamond";
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 58px;
+}
+.property-title {
+  font-family: "EB Garamond, serif";
+  font-size: 24px;
+  font-weight: 500;
+}
+.property-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+}
+.property-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.property-btn {
+  padding: 12px 15px;
+  border-radius: 10px;
+  background-color: #7549ff;
+  border: none;
+  color: #ffff;
+  cursor: pointer;
+  max-width: fit-content;
+  align-self: end;
+}
+/* Card Layout styles end */
+/* Strategy section start */
+.strategy-container {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background: linear-gradient(180deg, #5500d4 0%, #7549ff 100%);
+
+  padding: 25px;
+  border: none;
+  border-radius: 30px;
+  position: relative;
+  width: 1226px;
+  margin-bottom: 2rem;
+}
+.left-strategy-container {
+  margin-left: 4rem;
+}
+.strategy-title {
+  text-transform: uppercase;
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.74px;
+  color: #ffffff;
+}
+.strategy-desc {
+  font-family: "Nunito Sans";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 49px;
+  text-align: left;
+  color: #ffffff;
+}
+.strategy-btn {
+  cursor: pointer;
+  padding: 10px 30px;
+  background: linear-gradient(180deg, #5500d4 0%, #7549ff 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  margin-top: 3rem;
+}
+.right-strategy-container img {
+  width: 355px;
+  position: absolute;
+  top: -120px;
+}
+
+/* Strategy section end */
+/* info section */
+.info-container {
+  border-top: 1px solid rgba(85, 0, 212, 1);
+  border-bottom: 1px solid rgba(85, 0, 212, 1);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: #3f3f3f;
+}
+.left-container {
+  flex: 1;
+  margin-left: 5rem;
+}
+.left-container img {
+  width: 250px;
+}
+.middle-info-content {
+  flex: 1;
+  margin-top: 1.1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info-title {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #3f3f3f;
+}
+.info-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-family: "Nunito Sans";
+  flex: 1;
+}
+.info-contact {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+}
+.info-tel {
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: 400;
+}
+.middle-info-content span {
+  flex: 1;
+  color: #3f3f3f;
+}
+.right-info-contact {
+  flex: 2;
+  margin-bottom: 5rem;
+}
+.right-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.info-btn {
+  padding: 10px 30px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #5500d4 0%, #7549ff 100%);
+
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+}
+.right-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  margin-top: rem;
+}
+
+.rectangle-section {
+  display: flex;
+  gap: 0.5rem;
+}
+.rectangle {
+  width: 417px;
+}
+.connect {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Nunito Sans";
+  line-height: 29px;
+  margin-top: 1.1rem;
+}
+.icons {
+  display: flex;
+  gap: 2rem;
+}
+.fa-brands {
+  color: #000000;
+}
+.line {
+  color: #5500d4;
+}
+/* info section */
+
+/* footer section */
+.footer-container h2 {
+  color: #3f3f3f;
+  margin-left: 2rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+/* footer section */
+/* media queries */
+@media (max-width: 991px) {
+  .right-strategy-container img{
+    display: none;
+  }
+  .left-strategy-container{
+    margin: 0 auto;
+    text-align: center;
+  }
+  .strategy-btn{
+    width: 100%;
+  }
+}
+
+@media (max-width: 920px) {
+  .welcome-container{
+   text-align: center;
+  }
+
+  .right-welcome-content{
+    display: none;
+  }
+  .left-welcome-content{
+   align-self: center;
+}
+}
+@media (max-width: 768px ) {
+  .hero-nav-lists{
+    display: none;
+  }
+  .cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .properties{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .info-container{
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .cards{
+    grid-template-columns: repeat(1, 2fr);
+  }
+  .properties{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .info-container{
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  
+}
+}
+/* media queries */

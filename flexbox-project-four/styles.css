@@ -52,13 +52,15 @@ left: 82px;
 }
 
 .right-portal-container{
-    flex: 2;
+    flex: 4;
     background-color: #f9fbfd;
     color: #0f4a7b;
     /* position: relative; */
 }
 .middle-portal-container{
-    height: 100%;
+    flex: 0.2;
+    background-color: #f57d7d;
+    height: 100vh;
 }
 .logo{
     width: 127px;
@@ -74,6 +76,15 @@ opacity: 0px;
     line-height: 1.5;
     font-weight: 800;
     margin-bottom: 2rem;
+}
+
+.logo-img-1{
+    width: 60px;
+    margin-bottom: 30rem;
+}
+.logo-img-2{
+    width: 70px;
+    margin-bottom: 10rem;
 }
 form{
     display: flex;
@@ -119,4 +130,12 @@ form{
     .portal-container{
         flex-direction: column;
     }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+   .cards{
+    grid-template-columns: repeat(1, 1fr);
+   } 
 }
