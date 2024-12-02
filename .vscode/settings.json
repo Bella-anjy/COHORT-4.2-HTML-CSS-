@@ -76,7 +76,8 @@
   },
   "window.zoomLevel": 1,
   "liveServer.settings.donotVerifyTags": true,
-  "editor.stickyScroll.enabled": false
+  "editor.stickyScroll.enabled": false,
+  "liveServer.settings.port": 5501
   // "prettier.singleQuote": false,
   //   "prettier.semi": false,
 }
